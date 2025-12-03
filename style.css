@@ -508,6 +508,8 @@ th:last-child{
         line-height: 32px;
     }
 
-
+    .cart-info{
+        display: none;
+    }
 
 }
