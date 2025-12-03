@@ -559,6 +559,19 @@ form a{
 }
 
 
+/*----- About Page -----*/
+.about-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+
+
+/*----- Contact Page -----*/
+.contact-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);
+}
 
 
 
