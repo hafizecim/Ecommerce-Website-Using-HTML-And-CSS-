@@ -15,25 +15,25 @@
 <body>
 
 
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="images/logo.png" width="125px">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px">
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
             </div>
-            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
+    </div>
+    </div>
 
     <!-----featured products Section Start----->
     <div class="small-container">
@@ -96,7 +96,7 @@
                 </div>
                 <p>$50.00</p>
             </div>
-        </div> 
+        </div>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg">
@@ -209,7 +209,7 @@
 
 
     <!---Footer Section Start----->
-     <div class="footer">
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
@@ -222,7 +222,8 @@
                 </div>
                 <div class="footer-col-2">
                     <img src="images/logo-white.png">
-                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                    </p>
                 </div>
                 <div class="footer-col-3">
                     <h3>Usefull Links</h3>
@@ -246,13 +247,13 @@
             <hr>
             <p class="copyright">Copyright 2020 | Easy Tutorials</p>
         </div>
-     </div>
+    </div>
     <!---Footer Section End----->
 
 
 
     <!-- js for toggle menu-->
-     <script>
+    <script>
         var MenuItems = document.getElementById("MenuItems");
 
         MenuItems.style.maxHeight = "0px";
@@ -264,7 +265,7 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
-     </script>
+    </script>
 </body>
 
 </html>
