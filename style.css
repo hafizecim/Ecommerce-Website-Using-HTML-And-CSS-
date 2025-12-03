@@ -312,6 +312,12 @@ ul{
     display: none;
 }   
 
+/*----- Menu Toggle -----(Silebilirisn sonra kontrol et*/
+#MenuItems {
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
 
 /*----- Responsive Design -----*/
 /* For tablets and smaller devices */
