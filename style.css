@@ -132,26 +132,35 @@ p{
     position: relative;
     line-height: 60px;
     color: #555;
+    overflow: hidden;  /* çizgi taşmasın */
 }
 
 .title::after {
     content: '';
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: move 2s infinite linear;
+    left: -100px; /* çizgi başlangıçta tamamen solda */
+    width: 100px;
+    height: 5px;
+    background: #ff523b;
+    border-radius: 5px;
+
+    animation: slideLine 5s linear infinite;
 }
 
-@keyframes move {
-    0%   { transform: translateX(-80%); }
-    50%  { transform: translateX(-20%); }
-    100% { transform: translateX(-80%); }
+/* 🔥 Soldan sağa akan çizgi animasyonu */
+@keyframes slideLine {
+    0% {
+        left: -100px;   /* tamamen solda */
+    }
+    50% {
+        left: calc(100% + 20px); /* tamamen sağdan çıkar */
+    }
+    100% {
+        left: -100px;  /* tekrar soldan başa döner */
+    }
 }
+
 
 
 h4{
