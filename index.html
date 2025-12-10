@@ -29,8 +29,11 @@
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
+
                 <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                <img src="images/moon.png" id="darkToggle" width="30px" style="cursor:pointer; margin-left:15px;">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -71,7 +74,9 @@
         <div class="row">
             <div class="col-4">
                 <a href="product_details.html"><img src="images/product-1.jpg"></a>
-                <a href="product_details.html"><h4>Red Printed T-shirt</h4></a>
+                <a href="product_details.html">
+                    <h4>Red Printed T-shirt</h4>
+                </a>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -249,7 +254,7 @@
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever.</p> 
+                        the industry's standard dummy text ever.</p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -319,7 +324,7 @@
 
 
     <!---Footer Section Start----->
-     <div class="footer">
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
@@ -332,7 +337,8 @@
                 </div>
                 <div class="footer-col-2">
                     <img src="images/logo-white.png">
-                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
+                    <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                    </p>
                 </div>
                 <div class="footer-col-3">
                     <h3>Usefull Links</h3>
@@ -356,13 +362,13 @@
             <hr>
             <p class="copyright">Copyright 2020 | Easy Tutorials</p>
         </div>
-     </div>
+    </div>
     <!---Footer Section End----->
 
 
 
     <!-- js for toggle menu-->
-     <script>
+    <script>
         var MenuItems = document.getElementById("MenuItems");
 
         MenuItems.style.maxHeight = "0px";
@@ -374,7 +380,21 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
-     </script>
+    </script>
+
+    <script>
+        const toggle = document.getElementById("darkToggle");
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                toggle.src = "images/sun.png";
+            } else {
+                toggle.src = "images/moon.png";
+            }
+        });
+    </script>
 </body>
 
 </html>
